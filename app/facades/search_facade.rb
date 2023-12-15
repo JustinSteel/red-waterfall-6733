@@ -9,7 +9,7 @@ class SearchFacade
   def self.all_members
     members = SearchService.all_members
     members.map do |member|
-      Member.new(member) #if member[:affiliation] == 'Fire Nation' 
+      Member.new(member)
     end
   end
 
