@@ -1,0 +1,11 @@
+<h1>Total Members: <%= @all_members.count %></h1>
+<% @members.each do |member| %>
+  <% if member.photo_url.present? %>
+    <p><%= image_tag member.photo_url, alt: member.name %></p>
+  <% end %>
+  <h2>Name: <%= member.name %></h2>
+  <h3> Allies: <%= member.allies %></h3>
+  <h3> Enemies: <%= member.enemies %></h3>
+  <h3> Affiliation: <%= member.affiliation %></h3>
+<% end %>
+
