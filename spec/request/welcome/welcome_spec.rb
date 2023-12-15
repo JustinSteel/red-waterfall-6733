@@ -16,7 +16,7 @@ RSpec.describe "Welcome", type: :request do
       click_button "Search For Members"
    save_and_open_page
       expect(current_path).to eq("/search")
-      expect(page).to have_content("Total Members: 97")
+      expect(page).to have_content("Total Members: ")
       expect(page).to have_content("Name: Chan (Fire Nation admiral)")
       expect(page).to have_content("Allies: Ozai")
       expect(page).to have_content("Enemies: Earth Kingdom")

@@ -1,4 +1,4 @@
-<h1>Total Members: <%= @members.count %></h1>
+<h1>Total Members: <%= @count %></h1>
 <% @members.each do |member| %>
   <% if member.photo_url.present? %>
     <p><%= image_tag member.photo_url, alt: member.name %></p>
